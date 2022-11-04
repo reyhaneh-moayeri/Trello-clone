@@ -2,7 +2,7 @@
 
 import { defineNuxtConfig } from 'nuxt';
 export default defineNuxtConfig({
-  css: ['~/assets/main.scss' , '@fortawesome/fontawesome-svg-core/styles.css'],
+  css: ['~/assets/styles/main.scss' , '@fortawesome/fontawesome-svg-core/styles.css'],
   build: {
       transpile: [
       '@fortawesome/vue-fontawesome',
@@ -17,8 +17,16 @@ export default defineNuxtConfig({
         title: "Trello", 
     },
   },
+  vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "~/assets/styles/_colors.scss";',
+                },
+            },
+        },
+    },
   modules: [
-    // ...
     '@pinia/nuxt',
   ],
 })
