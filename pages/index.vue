@@ -1,6 +1,1 @@
-<template>
-<div>
-<top-navbar/>
-</div>
-
-</template>
+<template></template>
