@@ -4,11 +4,11 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .footer-container {
   position: absolute;
   bottom: 0;
-  background-color: $dark-blue-color;
-  color: $white-color
+  /* background-color: $dark-blue-color;
+  color: $white-color */
 }
 </style>

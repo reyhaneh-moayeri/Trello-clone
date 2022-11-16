@@ -57,9 +57,9 @@ const navItems = ref<NavItemTypes[]>([
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 .top-navbar {
-  height: 60px;
+  /* height: 60px;
   background-color: rgb(255, 255, 255);
   &__items {
     img {
@@ -72,6 +72,6 @@ const navItems = ref<NavItemTypes[]>([
 
   &:hover {
     box-shadow: rgb(9 30 66 / 15%) 0px 0.5rem 1rem 0px;
-  }
+  } */
 }
 </style>
