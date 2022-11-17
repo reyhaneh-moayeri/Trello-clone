@@ -34,7 +34,7 @@ const navItems = ref<NavItemTypes[]>([
 </script>
 
 <template>
-  <div class="top-navbar d-flex align-items-center justify-content-between">
+  <div class="top-navbar flex align-items-center justify-between">
     <div class="container">
       <div class="top-navbar__items d-flex">
         <img src="@/assets/images/logo.svg" alt="logo" class="p-3" />
