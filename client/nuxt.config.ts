@@ -1,7 +1,5 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
-
 export default defineNuxtConfig({
-  css: ['~/assets/styles/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
   build: {
     transpile: [
       '@fortawesome/vue-fontawesome',
@@ -10,14 +8,6 @@ export default defineNuxtConfig({
       '@fortawesome/free-solid-svg-icons',
       '@fortawesome/free-brands-svg-icons'
     ],
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      }
-    },
   },
   app: {
     head: {
@@ -36,6 +26,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/strapi',
+    '@nuxtjs/tailwindcss'
   ],
   strapi: {
     url: process.env.STRAPI_URL || 'http://localhost:1337',
